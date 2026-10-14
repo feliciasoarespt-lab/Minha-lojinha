@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="author"
+        content="Felícia Soares"
+    >
+
+    <meta
+        name="description"
+        content="AuraBox: loja fictícia de caixas de autocuidado."
+    >
+
+    <title>AuraBox | Caixas de autocuidado</title>
+
+    <!-- Fonte utilizada no site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ligação com o arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="topo" id="inicio">
+
+        <div class="limite topo-conteudo">
+
+            <a class="marca" href="#inicio">
+                AuraBox
+            </a>
+
+            <nav aria-label="Navegação principal">
+
+                <a href="#caixas">
+                    Caixas
+                </a>
+
+                <a href="#catalogo">
+                    Catálogo
+                </a>
+
+                <a href="#pedido">
+                    Monte a sua
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Capa principal -->
+        <section
+            class="apresentacao limite"
+            aria-labelledby="titulo-principal"
+        >
+
+            <div class="apresentacao-texto">
+
+                <p class="etiqueta">
+                    Autocuidado entregue em uma caixa
+                </p>
+
+                <h1 id="titulo-principal">
+                    Uma pausa criada especialmente para você.
+                </h1>
+
+                <p class="texto-introducao">
+                    A AuraBox reúne pequenos produtos para transformar
+                    momentos comuns em experiências de cuidado,
+                    descanso e bem-estar.
+                </p>
+
+                <a
+                    class="botao-link"
+                    href="#caixas"
+                >
+                    Conhecer as caixas
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Seleção de produtos -->
+        <section
+            class="selecao-area limite"
+            aria-label="Resumo da seleção"
+        >
+
+            <aside
+                class="resumo-selecao"
+                aria-labelledby="titulo-selecao"
+            >
+
+                <h2 id="titulo-selecao">
+                    Minha seleção
+                </h2>
+
+                <p class="quantidade-selecao">
+
+                    <span id="contador-caixas">
+                        0
+                    </span>
+
+                    <span id="palavra-caixa">
+                        caixas
+                    </span>
+
+                </p>
+
+                <ul id="lista-selecao">
+
+                    <li class="selecao-vazia">
+                        Nenhuma caixa selecionada.
+                    </li>
+
+                </ul>
+
+                <button
+                    id="limpar-selecao"
+                    class="botao-secundario"
+                    type="button"
+                >
+                    Limpar seleção
+                </button>
+
+                <p
+                    id="aviso-selecao"
+                    class="aviso"
+                    aria-live="polite"
+                ></p>
+
+            </aside>
+
+        </section>
+
+        <!-- Vitrine -->
+        <section
+            class="secao limite"
+            id="caixas"
+            aria-labelledby="titulo-caixas"
+        >
+
+            <div class="cabecalho-secao">
+
+                <p class="etiqueta">
+                    Escolha o seu momento
+                </p>
+
+                <h2 id="titulo-caixas">
+                    Caixas em destaque
+                </h2>
+
+            </div>
+
+            <div class="vitrine">
+
+                <!-- Caixa Noite Tranquila -->
+                <article class="produto">
+
+                    <img
+                        class="imagem-produto"
+                        src="imagens/noite-tranquila.webp"
+                        alt="Caixa Noite Tranquila com vela, chá e máscara de dormir"
+                        loading="lazy"
+                    >
+
+                    <span class="selo">
+                        Relaxamento
+                    </span>
+
+                    <h3>
+                        Noite Tranquila
+                    </h3>
+
+                    <p>
+                        Vela aromática, chá e máscara de dormir
+                        para desacelerar.
+                    </p>
+
+                    <p class="preco">
+                        R$ 79,90
+                    </p>
+
+                    <button
+                        class="botao-selecionar"
+                        type="button"
+                        data-caixa="Noite Tranquila"
+                        data-valor="noite"
+                    >
+                        Adicionar à seleção
+                    </button>
+
+                </article>
+
+                <!-- Caixa Dia de SPA -->
+                <article class="produto produto-destaque">
+
+                    <img
+                        class="imagem-produto"
+                        src="imagens/dia-de-spa.webp"
+                        alt="Caixa Dia de SPA com hidratante, sabonete, vela e toalha"
+                        loading="lazy"
+                    >
+
+                    <span class="selo">
+                        Mais escolhida
+                    </span>
+
+                    <h3>
+                        Dia de SPA
+                    </h3>
+
+                    <p>
+                        Hidratante, sabonete artesanal e vela
+                        para cuidar de você.
+                    </p>
+
+                    <p class="preco">
+                        R$ 89,90
+                    </p>
+
+                    <button
+                        class="botao-selecionar"
+                        type="button"
+                        data-caixa="Dia de SPA"
+                        data-valor="spa"
+                    >
+                        Adicionar à seleção
+                    </button>
+
+                </article>
+
+                <!-- Caixa Momento Fitness -->
+                <article class="produto">
+
+                    <img
+                        class="imagem-produto"
+                        src="imagens/momento-fitness.webp"
+                        alt="Caixa Momento Fitness com garrafa, faixa elástica e toalha"
+                        loading="lazy"
+                    >
+
+                    <span class="selo">
+                        Energia
+                    </span>
+
+                    <h3>
+                        Momento Fitness
+                    </h3>
+
+                    <p>
+                        Garrafa, faixa elástica e toalha
+                        para acompanhar sua rotina.
+                    </p>
+
+                    <p class="preco">
+                        R$ 99,90
+                    </p>
+
+                    <button
+                        class="botao-selecionar"
+                        type="button"
+                        data-caixa="Momento Fitness"
+                        data-valor="fitness"
+                    >
+                        Adicionar à seleção
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Categorias -->
+        <section
+            class="secao faixa-suave"
+            aria-labelledby="titulo-categorias"
+        >
+
+            <div class="limite">
+
+                <div class="cabecalho-secao">
+
+                    <p class="etiqueta">
+                        Para diferentes rotinas
+                    </p>
+
+                    <h2 id="titulo-categorias">
+                        Categorias de autocuidado
+                    </h2>
+
+                </div>
+
+                <ul class="categorias">
+
+                    <li>Relaxamento</li>
+
+                    <li>Beleza e cuidado</li>
+
+                    <li>Energia e foco</li>
+
+                    <li>Movimento e bem-estar</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Catálogo -->
+        <section
+            class="secao limite"
+            id="catalogo"
+            aria-labelledby="titulo-catalogo"
+        >
+
+            <div class="cabecalho-secao">
+
+                <p class="etiqueta">
+                    Veja os detalhes
+                </p>
+
+                <h2 id="titulo-catalogo">
+                    Catálogo AuraBox
+                </h2>
+
+            </div>
+
+            <div class="tabela-responsiva">
+
+                <table>
+
+                    <caption>
+                        Caixas disponíveis
+                    </caption>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Caixa</th>
+                            <th scope="col">Conteúdo principal</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Noite Tranquila</td>
+                            <td>Vela, chá e máscara de dormir</td>
+                            <td class="preco-tabela">R$ 79,90</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dia de SPA</td>
+                            <td>Hidratante, sabonete e vela</td>
+                            <td class="preco-tabela">R$ 89,90</td>
+                        </tr>
+
+                        <tr>
+                            <td>Momento Fitness</td>
+                            <td>Garrafa, faixa elástica e toalha</td>
+                            <td class="preco-tabela">R$ 99,90</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr>
+                            <td colspan="2">
+                                Total de opções
+                            </td>
+
+                            <td>
+                                3
+                            </td>
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Formulário -->
+        <section
+            class="secao faixa-formulario"
+            id="pedido"
+            aria-labelledby="titulo-pedido"
+        >
+
+            <div class="limite formulario-area">
+
+                <div class="formulario-introducao">
+
+                    <p class="etiqueta">
+                        Personalize seu momento
+                    </p>
+
+                    <h2 id="titulo-pedido">
+                        Monte sua AuraBox
+                    </h2>
+
+                    <p>
+                        Preencha seus dados e conte como podemos
+                        preparar uma experiência especial para você
+                        ou para presentear alguém.
+                    </p>
+
+                </div>
+
+                <form
+                    id="formulario-pedido"
+                    action=""
+                    method="post"
+                >
+
+                    <fieldset>
+
+                        <legend>
+                            Seus dados
+                        </legend>
+
+                        <label for="nome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Como você quer ser chamado"
+                            required
+                            minlength="3"
+                            maxlength="80"
+                        >
+
+                        <p
+                            id="erro-nome"
+                            class="erro"
+                            aria-live="polite"
+                        ></p>
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="voce@exemplo.com"
+                            required
+                        >
+
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="83 99999-9999"
+                            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                        >
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>
+                            Sua experiência
+                        </legend>
+
+                        <label for="caixa">
+                            Qual caixa você deseja?
+                        </label>
+
+                        <select
+                            id="caixa"
+                            name="caixa"
+                            required
+                        >
+
+                            <option
+                                value=""
+                                selected
+                                disabled
+                            >
+                                Selecione uma caixa
+                            </option>
+
+                            <option value="noite">
+                                Noite Tranquila
+                            </option>
+
+                            <option value="spa">
+                                Dia de SPA
+                            </option>
+
+                            <option value="fitness">
+                                Momento Fitness
+                            </option>
+
+                        </select>
+
+                        <label for="assunto">
+                            Como podemos ajudar?
+                        </label>
+
+                        <select
+                            id="assunto"
+                            name="assunto"
+                            required
+                        >
+
+                            <option value="personalizar">
+                                Quero personalizar minha caixa
+                            </option>
+
+                            <option value="presente">
+                                Quero enviar como presente
+                            </option>
+
+                            <option value="troca">
+                                Troca ou devolução
+                            </option>
+
+                            <option value="parceria">
+                                Proposta de parceria
+                            </option>
+
+                        </select>
+
+                        <p
+                            id="dica-assunto"
+                            class="dica"
+                        >
+                            Conte quais itens combinam com você.
+                        </p>
+
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            placeholder="Escreva os detalhes do seu pedido..."
+                        ></textarea>
+
+                        <p
+                            id="erro-mensagem"
+                            class="erro"
+                            aria-live="polite"
+                        ></p>
+
+                        <label
+                            class="linha-checkbox"
+                            for="novidades"
+                        >
+
+                            <input
+                                type="checkbox"
+                                id="novidades"
+                                name="novidades"
+                                required
+                            >
+
+                            Aceito receber novidades da AuraBox
+
+                        </label>
+
+                    </fieldset>
+
+                    <button
+                        class="botao-enviar"
+                        type="submit"
+                    >
+                        Enviar pedido
+                    </button>
+
+                    <p
+                        id="resultado-formulario"
+                        class="resultado"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <div class="limite rodape-conteudo">
+
+            <div>
+
+                <h2>
+                    AuraBox
+                </h2>
+
+                <p>
+                    Pequenos cuidados, grandes pausas.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Fale conosco
+                </h3>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visitar Instagram da AuraBox
+                </a>
+
+            </div>
+
+            <p class="direitos">
+                &copy; 2026 AuraBox.
+                Projeto acadêmico de loja fictícia.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Ligação com o JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
